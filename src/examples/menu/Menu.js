@@ -7,6 +7,14 @@ export default function() {
         <TreeList 
             ui="nav"
             expanderFirst={false}
+            responsiveConfig={{
+                [medium]: {
+                    micro: true
+                },
+                [large]: {
+                    micro: false
+                }
+            }}
             store={{
                 root: {
                     children: [

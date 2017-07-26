@@ -9,13 +9,27 @@ export default function VboxHboxSwitch() {
             defaults={{
                 margin: 5
             }}
-            layout="hbox"
+            responsiveConfig={{
+                tall: {
+                    layout: 'vbox'
+                },
+                wide: {
+                    layout: 'hbox'
+                }
+            }}
         >
             <Panel 
                 flex={1} 
                 bodyPadding={10} 
                 shadow
-                title="Left"
+                responsiveConfig={{
+                    tall: {
+                        title: 'Top'
+                    },
+                    wide: {
+                        title: 'Left'
+                    }
+                }}
             >
                 Item 1
             </Panel>
@@ -23,7 +37,14 @@ export default function VboxHboxSwitch() {
                 flex={1} 
                 bodyPadding={10} 
                 shadow
-                title="Right"
+                responsiveConfig={{
+                    tall: {
+                        title: 'Bottom'
+                    },
+                    wide: {
+                        title: 'Right'
+                    }
+                }}
             >
                 Item 2
             </Panel>
