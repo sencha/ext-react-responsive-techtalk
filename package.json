@@ -1,0 +1,49 @@
+{
+  "name": "ext-react-responsive-techtalk",
+  "version": "1.0.0",
+  "description": "Code from the ExtReact Responsive Tech Talk on July 27, 2017",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sencha/ext-react-responsive-techtalk"
+  },
+  "author": "Sencha, inc.",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf build",
+    "start": "webpack-dev-server --progress --colors",
+    "build": "npm run clean && cross-env NODE_ENV=production webpack --env.prod=true --progress --colors",
+    "prod": "cross-env NODE_ENV=production webpack-dev-server --env.prod=true --progress --colors"
+  },
+  "dependencies": {
+    "@extjs/ext-react": "^6.5.1",
+    "@extjs/reactor": "^1.1.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-runtime": "^6.23.0",
+    "prop-types": "^15.5.8",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-router-dom": "^4.1.1"
+  },
+  "devDependencies": {
+    "@extjs/reactor-babel-plugin": "^1.1.0",
+    "@extjs/reactor-webpack-plugin": "^1.1.0",
+    "babel-core": "^6.17.0",
+    "babel-jest": "^20.0.3",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-2": "^6.13.0",
+    "cross-env": "^5.0.0",
+    "html-webpack-plugin": "^2.24.1",
+    "jest": "^20.0.4",
+    "open-browser-webpack-plugin": "0.0.5",
+    "portfinder": "^1.0.13",
+    "react-hot-loader": "^3.0.0-beta.7",
+    "react-test-renderer": "^15.5.4",
+    "rimraf": "^2.6.1",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.1"
+  }
+}
