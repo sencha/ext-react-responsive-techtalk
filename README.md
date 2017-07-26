@@ -4,7 +4,8 @@ This code was presented during the ExtReact Tech Talk titled "Building Responsiv
 
 ## Quick Start
 
-If you haven't already, sign in to Sencha's NPM registry:
+If you haven't already, sign in to Sencha's NPM registry.  Get your credentials by [signing 
+up for a trial of ExtReact](https://www.sencha.com/products/extreact/evaluate/) and then run the follwing:
 
 ```
 npm login --registry=http://npm.sencha.com --scope=@extjs
