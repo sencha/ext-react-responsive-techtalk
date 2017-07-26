@@ -14,6 +14,7 @@ npm login --registry=http://npm.sencha.com --scope=@extjs
 Then, run the following to clone and build the project:
 
     git clone https://github.com/sencha/ext-react-responsive-techtalk.git
+    cd ext-react-responsive-techtalk
     npm install
     npm start
 
