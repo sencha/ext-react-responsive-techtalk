@@ -17,7 +17,7 @@ export default class ResponsiveGrid extends Component {
                     text="ID" 
                     width={50}
                     responsiveConfig={{
-                        "true": {
+                        true: {
                             hidden: false
                         },
                         [medium]: {
@@ -31,7 +31,7 @@ export default class ResponsiveGrid extends Component {
                     flex={1} 
                     renderer={(value, data) => <div>{data.get('first_name')} {data.get('last_name')}</div> } 
                     responsiveConfig={{ 
-                        "true": {
+                        true: {
                             hidden: true
                         },
                         [xsmall]: { 
@@ -45,7 +45,7 @@ export default class ResponsiveGrid extends Component {
                     text="First Name" 
                     flex={1}
                     responsiveConfig={{
-                        "true": {
+                        true: {
                             hidden: false
                         },
                         [xsmall]: {
@@ -58,7 +58,7 @@ export default class ResponsiveGrid extends Component {
                     text="Last Name" 
                     flex={1}
                     responsiveConfig={{
-                        "true": {
+                        true: {
                             hidden: false
                         },
                         [xsmall]: {
@@ -71,7 +71,7 @@ export default class ResponsiveGrid extends Component {
                     text="Email" 
                     flex={2}
                     responsiveConfig={{
-                        "true": {
+                        true: {
                             hidden: false
                         },
                         [xsmall]: {

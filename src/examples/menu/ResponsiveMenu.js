@@ -29,7 +29,7 @@ export default class ResponsiveMenu extends Component {
                 ) : (
                     <Panel docked="left" layout="fit" shadow width="225"
                         responsiveConfig={{
-                            "true": {
+                            true: {
                                 width: 225
                             },
                             [medium]: {
