@@ -17,36 +17,38 @@ export default class ResponsiveGrid extends Component {
                     text="ID" 
                     width={50}
                     responsiveConfig={{
-                        [small]: {
-                            hidden: true
-                        }, 
                         [medium]: {
                             hidden: false
-                        }
+                        },
+                        [small]: {
+                            hidden: true
+                        } 
                     }}
                 />
+
                 <Column text="Name" flex={1} 
                     renderer={(value, data) => <div>{data.get('first_name')} {data.get('last_name')}</div> } 
                     responsiveConfig={{ 
-                        [xsmall]: { 
-                            hidden: false 
-                        }, 
                         [small]: { 
                             hidden: true 
+                        },
+                        [xsmall]: { 
+                            hidden: false 
                         } 
                     }} 
                 />
+
                 <Column 
                     dataIndex="first_name" 
                     text="First Name" 
                     flex={1}
                     responsiveConfig={{
-                        [xsmall]: {
-                            hidden: true
-                        }, 
                         [small]: {
                             hidden: false
-                        }
+                        },
+                        [xsmall]: {
+                            hidden: true
+                        } 
                     }}
                 />
                 <Column 
@@ -54,12 +56,12 @@ export default class ResponsiveGrid extends Component {
                     text="Last Name" 
                     flex={1}
                     responsiveConfig={{
-                        [xsmall]: {
-                            hidden: true
-                        }, 
                         [small]: {
                             hidden: false
-                        }
+                        },
+                        [xsmall]: {
+                            hidden: true
+                        } 
                     }}
                 />
                 <Column 
@@ -67,12 +69,12 @@ export default class ResponsiveGrid extends Component {
                     text="Email" 
                     flex={2}
                     responsiveConfig={{
-                        [xsmall]: {
-                            hidden: true
-                        }, 
                         [small]: {
                             hidden: false
-                        }
+                        },
+                        [xsmall]: {
+                            hidden: true
+                        } 
                     }}
                 />
                 <Column 
