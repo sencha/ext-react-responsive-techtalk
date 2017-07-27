@@ -8,7 +8,7 @@ export default function() {
             ui="nav"
             expanderFirst={false}
             responsiveConfig={{
-                [large]: {
+                "true": {
                     micro: false
                 },
                 [medium]: {
